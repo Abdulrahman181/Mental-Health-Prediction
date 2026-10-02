@@ -21,3 +21,5 @@ These checks validate notebook structure, cached-output hygiene, and Python synt
 ## Limitations and privacy
 
 The notebook's target is the survey's `treatment` field, not a clinical diagnosis. Its predictions must not be used to diagnose, screen, or make decisions about individuals. The input dataset is absent, and no model-performance claim is made here. Notebook execution outputs are intentionally cleared to avoid distributing cached respondent-level data, predictions, plots, or stale metrics; rerunning it may recreate sensitive outputs locally.
+
+The earlier notebook version with cached outputs remains in the pre-existing `main` commit/history; this PR does not rewrite repository history. The repository owner should assess whether those historical outputs require coordinated history cleanup.
